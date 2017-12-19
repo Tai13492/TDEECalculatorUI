@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tai.tdeecalculatordemo.MainActivity">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:weightSum="10">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="2"
+                android:src="@drawable/genderclipart"/>
+            <CheckBox
+                android:id="@+id/male"
+                android:onClick="onGenderClicked"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="10dp"
+                android:text = "Male"/>
+            <CheckBox
+                android:id="@+id/female"
+                android:onClick="onGenderClicked"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_weight="4"
+                android:text = "Female"/>
+
+        </LinearLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+            >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="3"
+            android:src="@drawable/weightclipart" />
+
+            <EditText
+                android:id="@+id/weight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="5"
+                android:hint="Enter Weight"
+                android:inputType="numberDecimal"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:layout_weight="2"
+                android:text="Kg"
+                android:textSize="20sp"
+                />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:weightSum="10">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="3"
+                android:src="@drawable/heightclipart" />
+
+            <EditText
+                android:id="@+id/height"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight="5"
+                android:hint="Enter Height"
+                android:inputType="numberDecimal"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_marginTop="7dp"
+                android:text="cm"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="0dp"
+            android:weightSum="10">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="3"
+                android:src="@drawable/ageclipart" />
+
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="5"
+                android:hint="Enter Age"
+                android:inputType="numberDecimal"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_marginTop="7dp"
+                android:text="years"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black"
+            android:alpha="0.8"
+            android:layout_marginTop="2dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:weightSum="10">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="3"
+                android:src="@drawable/lifestyleclipart" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="18dp"
+                android:layout_weight="7"
+                android:text="Activity Level"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="16">
+            <CheckBox
+                android:id="@+id/sed"
+                android:onClick="onCheckboxClicked"
+            android:layout_width="0dp"
+                android:layout_weight="1.2"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+
+            android:layout_marginLeft="0dp"
+            />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_marginTop="10dp"
+                android:layout_height="50dp"
+                android:src="@drawable/sleepclipart" />
+            <CheckBox
+                android:id="@+id/lact"
+                android:onClick="onCheckboxClicked"
+                android:layout_width="0dp"
+                android:layout_weight="1.2"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_marginTop="10dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="0dp"
+                android:src="@drawable/sittingclipart" />
+            <CheckBox
+                android:id="@+id/mact"
+                android:onClick="onCheckboxClicked"
+                android:layout_width="0dp"
+                android:layout_weight="1.2"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="0dp"
+                />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_marginTop="14dp"
+                android:layout_height="40dp"
+                android:src="@drawable/joggingclipart" />
+            <CheckBox
+                android:id="@+id/vact"
+                android:onClick="onCheckboxClicked"
+                android:layout_width="0dp"
+                android:layout_weight="1.2"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_marginTop="10dp"
+                android:layout_height="50dp"
+                android:src="@drawable/runningclipart" />
+            <CheckBox
+                android:id="@+id/eact"
+                android:onClick="onCheckboxClicked"
+                android:layout_width="0dp"
+                android:layout_weight="1.2"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_marginTop="10dp"
+                android:layout_height="50dp"
+                android:src="@drawable/rocketclipart" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="10dp"
+            android:weightSum="10">
+            <TextView
+                android:id="@+id/activitylevel"
+                android:layout_width="0dp"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:text=""/>
+        </LinearLayout>
+        <Button
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:onClick="onClicked"
+            android:layout_height="wrap_content"
+            android:text="Calculate"/>
+
+    </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
